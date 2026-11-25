@@ -104,3 +104,131 @@ if user and user.is_active and user.role == "admin":
     print("10. Is admin: True")
 else:
     print("10. Is admin: False")
+
+# FizzBuzz using a for loop
+
+for i in range(1, 101):
+
+    if i % 3 == 0 and i % 5 == 0:
+        print("FizzBuzz")
+
+    elif i % 3 == 0:
+        print("Fizz")
+
+    elif i % 5 == 0:
+        print("Buzz")
+
+    else:
+        print(i)
+
+# FizzBuzz using a for loop
+
+for i in range(1, 101):
+
+    if i % 3 == 0 and i % 5 == 0:
+        print("FizzBuzz")
+
+    elif i % 3 == 0:
+        print("Fizz")
+
+    elif i % 5 == 0:
+        print("Buzz")
+
+    else:
+        print(i)
+
+# FizzBuzz using a for loop
+
+for i in range(1, 101):
+
+    if i % 3 == 0 and i % 5 == 0:
+        print("FizzBuzz")
+
+    elif i % 3 == 0:
+        print("Fizz")
+
+    elif i % 5 == 0:
+        print("Buzz")
+
+    else:
+        print(i)
+
+# FizzBuzz using a for loop
+
+for i in range(1, 101):
+
+    if i % 3 == 0 and i % 5 == 0:
+        print("FizzBuzz")
+
+    elif i % 3 == 0:
+        print("Fizz")
+
+    elif i % 5 == 0:
+        print("Buzz")
+
+    else:
+        print(i)
+
+# FizzBuzz using a for loop
+
+for i in range(1, 101):
+
+    if i % 3 == 0 and i % 5 == 0:
+        print("FizzBuzz")
+
+    elif i % 3 == 0:
+        print("Fizz")
+
+    elif i % 5 == 0:
+        print("Buzz")
+
+    else:
+        print(i)
+
+import random
+
+# Generate a random number between 1 and 100
+secret_number = random.randint(1, 100)
+
+attempts = 7
+
+print("Welcome to the Number Guessing Game!")
+print("I have selected a number between 1 and 100.")
+print("You have 7 attempts to guess it.")
+
+# Allow 7 attempts
+for i in range(1, attempts + 1):
+
+    while True:
+        guess = input(f"\nAttempt {i}: Enter your guess: ")
+
+        # Check whether input contains only digits
+        if guess.isdigit():
+            guess = int(guess)
+
+            if 1 <= guess <= 100:
+                break
+            else:
+                print("Please enter a number between 1 and 100.")
+
+        else:
+            print("Invalid input! Please enter a numeric value.")
+
+    # Compare the guess with the secret number
+    if guess == secret_number:
+        print("Congratulations! You guessed the correct number!")
+        print(f"You guessed it in {i} attempts.")
+        break
+
+    elif guess < secret_number:
+        print("Higher! Try a bigger number.")
+
+    else:
+        print("Lower! Try a smaller number.")
+
+else:
+    # Executes only when all 7 attempts are used without breaking
+    print("\nYou lost! Better luck next time.")
+    print(f"The correct number was {secret_number}.")
+
+print("\nThanks for playing!")
